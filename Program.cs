@@ -41,7 +41,7 @@ namespace Calculadora
                         break;
                 default:
                     Console.Clear();
-                    Console.WriteLine("A opção escolhida não existe. Por favor escolha novamente. ");                    
+                    Console.WriteLine("A opção escolhida não existe. Por favor digite novamente. ");                    
                     Menu();
                     break;
             }
@@ -56,7 +56,7 @@ namespace Calculadora
             decimal num2 = Convert.ToDecimal(Console.ReadLine());
 
             Console.Clear();
-            //Espaco();
+
             Console.WriteLine($"{num1} + {num2} = {num1 + num2}");
             Console.WriteLine("------------------------");
             Menu();
@@ -71,9 +71,9 @@ namespace Calculadora
             double num2 = Convert.ToDouble(Console.ReadLine());
 
             Console.Clear();
-            Espaco();
+            
             Console.WriteLine($"{num1} - {num2} = {num1 - num2}");
-            Espaco();
+            Console.WriteLine("------------------------");
             Menu();
         }
 
@@ -84,10 +84,11 @@ namespace Calculadora
 
             Console.Write("Segundo valor: ");
             double num2 = Convert.ToDouble(Console.ReadLine());
+
             Console.Clear();
-            Espaco();
+            
             Console.WriteLine($"{num1} ÷ {num2} = {num1 / num2}");
-            Espaco();
+            Console.WriteLine("------------------------");
             Menu();
         }
 
@@ -100,15 +101,11 @@ namespace Calculadora
             decimal num2 = Convert.ToDecimal(Console.ReadLine());
 
             Console.Clear();
-            Espaco();
+            
             Console.WriteLine($"{num1} x {num2} = {num1 * num2}");
-            Espaco();
+            Console.WriteLine("------------------------");
             Menu();
         }
 
-        static void Espaco()
-        {
-            Console.WriteLine();
-        }
     }
 }
