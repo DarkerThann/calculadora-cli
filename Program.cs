@@ -50,10 +50,10 @@ namespace Calculadora
         static void Somar()
         {
             Console.Write("Primeiro valor: ");
-            decimal num1 = Convert.ToDecimal(Console.ReadLine());
+            double num1 = Convert.ToDouble(Console.ReadLine());
 
             Console.Write("Segundo valor: ");
-            decimal num2 = Convert.ToDecimal(Console.ReadLine());
+            double num2 = Convert.ToDouble(Console.ReadLine());
 
             Console.Clear();
 
@@ -95,10 +95,10 @@ namespace Calculadora
         static void Multiplicar()
         {
             Console.Write("Primeiro valor: ");
-            decimal num1 = Convert.ToDecimal(Console.ReadLine());
+            double num1 = Convert.ToDouble(Console.ReadLine());
 
             Console.Write("Segundo valor: ");
-            decimal num2 = Convert.ToDecimal(Console.ReadLine());
+            double num2 = Convert.ToDouble(Console.ReadLine());
 
             Console.Clear();
             
