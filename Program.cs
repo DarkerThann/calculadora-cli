@@ -21,6 +21,7 @@ namespace Calculadora
             Console.WriteLine("Subtrair");
             Console.WriteLine("Dividir");
             Console.WriteLine("Multiplicar");
+            Console.WriteLine("Sair");
             Console.WriteLine("------------------------");
             Console.Write("Digite uma opção: ");
 
@@ -39,6 +40,10 @@ namespace Calculadora
                 case "MULTIPLICAR":
                         Multiplicar();
                         break;
+                case "SAIR":
+                        Environment.Exit(0);
+                        break;
+
                 default:
                     Console.Clear();
                     Console.WriteLine("A opção escolhida não existe. Por favor digite novamente. ");                    
