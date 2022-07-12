@@ -45,6 +45,9 @@ namespace Calculadora
                     MenuOption();
                     UserChoise();
                     break;
+                case "SAIR": 
+                    Environment.Exit(0); 
+                    break; 
                 default:
                     Console.Clear();
                     Console.WriteLine("A opção escolhida não existe. Por favor digite novamente. ");
