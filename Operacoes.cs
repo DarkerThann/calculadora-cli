@@ -18,30 +18,32 @@ namespace Calculadora
             switch (MenuInput.ToUpper())
             {
                 case "SOMAR":
-                    UserOption();
+                    UserValues();
                     Console.Clear();
                     Console.WriteLine($"{num1} + {num2} = {Somar(num1, num2)}");
                     MenuOption();
                     UserChoise();
                     break;
                 case "SUBTRAIR":
-                    UserOption();
+                    UserValues();
                     Console.Clear();
                     Console.WriteLine($"{num1} - {num2} = {Subtrair(num1, num2)}");
                     MenuOption();
                     UserChoise();
                     break;
                 case "DIVIDIR":
-                    UserOption();
+                    UserValues();
                     Console.Clear();
                     Console.WriteLine($"{num1} ÷ {num2} = {Dividir(num1, num2)}");
                     MenuOption();
                     UserChoise();
                     break;
                 case "MULTIPLICAR":
-                    UserOption();
+                    UserValues();
                     Console.Clear();
-                    Multiplicar(num1, num2);
+                    Console.WriteLine($"{num1} X {num2} = {Multiplicar(num1, num2)}");
+                    MenuOption();
+                    UserChoise();
                     break;
                 default:
                     Console.Clear();

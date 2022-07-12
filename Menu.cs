@@ -27,7 +27,7 @@ namespace Calculadora
             Console.Write("Digite uma opção: ");
         }
 
-        public void UserOption()
+        public void UserValues()
         {
             Console.Write("Primeiro valor: ");
             num1 = Convert.ToDouble(Console.ReadLine());
