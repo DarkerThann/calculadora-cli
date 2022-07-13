@@ -59,11 +59,27 @@ namespace Calculadora
 
         public void UserValues()
         {
-            Console.Write("Primeiro valor: ");
-            num1 = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Segundo valor: ");
-            num2 = Convert.ToDouble(Console.ReadLine());
-
+            try
+            {
+                Console.Write("Primeiro valor: ");
+                num1 = Convert.ToDouble(Console.ReadLine());
+                try
+                {
+                    Console.Write("Segundo valor: ");
+                    num2 = Convert.ToDouble(Console.ReadLine());
+                }
+                catch(FormatException)
+                {
+                    Console.WriteLine($"Erro: Digite apenas números");
+                    Console.Write("Segundo valor: ");
+                    num2 = Convert.ToDouble(Console.ReadLine());
+                }
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine($"Erro: Digite apenas números");
+                UserValues();
+            }
         }
 
         public double Somar(double num1, double num2)
