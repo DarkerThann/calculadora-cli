@@ -11,6 +11,7 @@ namespace Calculadora
 
         public Operacoes() { }
 
+
         public void UserChoise()
         {
             MenuInput = Console.ReadLine();
@@ -45,8 +46,7 @@ namespace Calculadora
                     MenuOption();
                     UserChoise();
                     break;
-                case "SAIR": 
-                    Environment.Exit(0); 
+                case "SAIR": Environment.Exit(0); 
                     break; 
                 default:
                     Console.Clear();
@@ -55,6 +55,15 @@ namespace Calculadora
                     UserChoise();
                     break;
             }
+        }
+
+        public void UserValues()
+        {
+            Console.Write("Primeiro valor: ");
+            num1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Segundo valor: ");
+            num2 = Convert.ToDouble(Console.ReadLine());
+
         }
 
         public double Somar(double num1, double num2)

@@ -16,24 +16,13 @@ namespace Calculadora
 
         public void MenuOption()
         {
-            Console.WriteLine("O que você deseja fazer?");
-            Console.WriteLine("------------------------");
-            Console.WriteLine("Somar");
-            Console.WriteLine("Subtrair");
-            Console.WriteLine("Dividir");
-            Console.WriteLine("Multiplicar");
-            Console.WriteLine("Sair");
-            Console.WriteLine("------------------------");
-            Console.Write("Digite uma opção: ");
+
+            string[] menu = { "O que você deseja Fazer?", "------------------------", "Somar", "Subtrair", "Dividir", "Multiplicar", "Sair", "------------------------", "Digite uma opção: " };
+            foreach (string opcoes in menu)
+            {
+                Console.WriteLine(opcoes);
+            }
         }
 
-        public void UserValues()
-        {
-            Console.Write("Primeiro valor: ");
-            num1 = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Segundo valor: ");
-            num2 = Convert.ToDouble(Console.ReadLine());
-
-        }
     }
 }
